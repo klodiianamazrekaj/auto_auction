@@ -103,6 +103,4 @@ public class AuctionsController : ControllerBase
         return Ok();
 
     }
-
-
 }
