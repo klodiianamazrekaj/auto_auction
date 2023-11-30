@@ -37,3 +37,14 @@
 /Users/klodianamazrekaj/Desktop/auto_auction/src/AuctionService/bin/Debug/net7.0/System.CodeDom.dll
 /Users/klodianamazrekaj/Desktop/auto_auction/src/AuctionService/obj/Debug/net7.0/AuctionService.csproj.AssemblyReference.cache
 /Users/klodianamazrekaj/Desktop/auto_auction/src/AuctionService/obj/Debug/net7.0/AuctionService.csproj.CopyComplete
+/Users/klodianamazrekaj/Desktop/auto_auction/src/AuctionService/bin/Debug/net7.0/MassTransit.dll
+/Users/klodianamazrekaj/Desktop/auto_auction/src/AuctionService/bin/Debug/net7.0/MassTransit.Abstractions.dll
+/Users/klodianamazrekaj/Desktop/auto_auction/src/AuctionService/bin/Debug/net7.0/MassTransit.RabbitMqTransport.dll
+/Users/klodianamazrekaj/Desktop/auto_auction/src/AuctionService/bin/Debug/net7.0/Microsoft.Extensions.Diagnostics.HealthChecks.dll
+/Users/klodianamazrekaj/Desktop/auto_auction/src/AuctionService/bin/Debug/net7.0/Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions.dll
+/Users/klodianamazrekaj/Desktop/auto_auction/src/AuctionService/bin/Debug/net7.0/Microsoft.Extensions.Logging.Abstractions.dll
+/Users/klodianamazrekaj/Desktop/auto_auction/src/AuctionService/bin/Debug/net7.0/Microsoft.Extensions.Options.dll
+/Users/klodianamazrekaj/Desktop/auto_auction/src/AuctionService/bin/Debug/net7.0/RabbitMQ.Client.dll
+/Users/klodianamazrekaj/Desktop/auto_auction/src/AuctionService/bin/Debug/net7.0/Contracts.dll
+/Users/klodianamazrekaj/Desktop/auto_auction/src/AuctionService/bin/Debug/net7.0/Contracts.pdb
+/Users/klodianamazrekaj/Desktop/auto_auction/src/AuctionService/bin/Debug/net7.0/MassTransit.EntityFrameworkCoreIntegration.dll
