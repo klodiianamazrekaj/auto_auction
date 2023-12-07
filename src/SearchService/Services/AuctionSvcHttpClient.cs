@@ -1,7 +1,6 @@
 ﻿using MongoDB.Entities;
-using SearchService.Models;
 
-namespace SearchService.Services;
+namespace SearchService;
 
 public class AuctionSvcHttpClient
 {
@@ -24,5 +23,4 @@ public class AuctionSvcHttpClient
         return await _httpClient.GetFromJsonAsync<List<Item>>(_config["AuctionServiceUrl"] 
             + "/api/auctions?date=" + lastUpdated);
     }
-
 }

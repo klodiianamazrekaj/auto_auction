@@ -2,7 +2,6 @@
 using Contracts;
 using MassTransit;
 using MongoDB.Entities;
-using SearchService.Models;
 
 namespace SearchService;
 
@@ -14,6 +13,7 @@ public class AuctionCreatedConsumer : IConsumer<AuctionCreated>
     {
         _mapper = mapper;
     }
+
     public async Task Consume(ConsumeContext<AuctionCreated> context)
     {
         Console.WriteLine("--> Consuming auction created: " + context.Message.Id);
