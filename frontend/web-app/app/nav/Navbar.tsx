@@ -3,12 +3,15 @@
 import React from "react";
 
 //icons
-import { RiAuctionLine } from "react-icons/ri";
 import Search from "./Search";
 import Logo from "./Logo";
+import LoginButton from "./LoginButton";
+import { getCurrentUser } from "../actions/authActions";
+import UserActions from "./UserActions";
 
-export default function Navbar() {
-  console.log("Client component");
+export default async function Navbar() {
+  const user = await getCurrentUser();
+
   return (
     <header
       className="sticky top-0 z-50 flex justify-between 
@@ -16,7 +19,7 @@ export default function Navbar() {
     >
       <Logo />
       <Search />
-      <div>Login</div>
+      {user ? <UserActions /> : <LoginButton />}
     </header>
   );
 }
