@@ -24,17 +24,17 @@ export default function Listings() {
     shallow
   );
   const setParams = useParamsStore((state) => state.setParams);
-  const url = qs.stringifyUrl({ url: "", query: params });
+  const url = qs.stringifyUrl({ url: '', query: params });
 
   function setPageNumber(pageNumber: number) {
     setParams({ pageNumber });
   }
 
   useEffect(() => {
-    getData(url).then((data) => {
+    getData(url).then(data => {
       setData(data);
     });
-  }, [url]);
+  }, [url, setData]);
 
   if (!data) return <h3>Loading...</h3>;
 
