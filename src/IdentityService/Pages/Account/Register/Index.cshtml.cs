@@ -24,6 +24,7 @@ namespace IdentityService.Pages.Register
 
         [BindProperty]
         public bool RegisterSuccess { get; set; }
+
         public IActionResult OnGet(string returnUrl)
         {
             Input = new RegisterViewModel
