@@ -1,7 +1,6 @@
 'use server'
 
 import { Auction, PagedResult } from "@/types";
-import { getTokenWorkaround } from "./authActions";
 import { fetchWrapper } from "@/lib/fetchWrapper";
 import { FieldValues } from "react-hook-form";
 import { revalidatePath } from "next/cache";
@@ -30,4 +29,8 @@ export async function updateAuction(data: FieldValues, id: string) {
   const res = await fetchWrapper.put(`auctions/${id}`, data)
   revalidatePath(`/auctions/${id}`)
   return res
+}
+
+export async function deleteAuction(id: string) {
+  return await fetchWrapper.del(`auctions/${id}`)
 }
