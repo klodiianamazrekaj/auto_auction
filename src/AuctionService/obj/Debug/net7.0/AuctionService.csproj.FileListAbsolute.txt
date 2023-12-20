@@ -55,3 +55,10 @@
 /Users/klodianamazrekaj/Desktop/auto_auction/src/AuctionService/bin/Debug/net7.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 /Users/klodianamazrekaj/Desktop/auto_auction/src/AuctionService/bin/Debug/net7.0/Microsoft.IdentityModel.Tokens.dll
 /Users/klodianamazrekaj/Desktop/auto_auction/src/AuctionService/bin/Debug/net7.0/System.IdentityModel.Tokens.Jwt.dll
+/Users/klodianamazrekaj/Desktop/auto_auction/src/AuctionService/bin/Debug/net7.0/Google.Protobuf.dll
+/Users/klodianamazrekaj/Desktop/auto_auction/src/AuctionService/bin/Debug/net7.0/Grpc.AspNetCore.Server.dll
+/Users/klodianamazrekaj/Desktop/auto_auction/src/AuctionService/bin/Debug/net7.0/Grpc.AspNetCore.Server.ClientFactory.dll
+/Users/klodianamazrekaj/Desktop/auto_auction/src/AuctionService/bin/Debug/net7.0/Grpc.Core.Api.dll
+/Users/klodianamazrekaj/Desktop/auto_auction/src/AuctionService/bin/Debug/net7.0/Grpc.Net.Client.dll
+/Users/klodianamazrekaj/Desktop/auto_auction/src/AuctionService/bin/Debug/net7.0/Grpc.Net.ClientFactory.dll
+/Users/klodianamazrekaj/Desktop/auto_auction/src/AuctionService/bin/Debug/net7.0/Grpc.Net.Common.dll
