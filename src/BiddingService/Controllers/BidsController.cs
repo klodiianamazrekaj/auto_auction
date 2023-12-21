@@ -16,8 +16,7 @@ public class BidsController : ControllerBase
     private readonly GrpcAuctionClient _grpcClient;
 
     public BidsController(IMapper mapper, IPublishEndpoint publishEndpoint,
-        GrpcAuctionClient grpcClient
-    )
+        GrpcAuctionClient grpcClient)
     {
         _mapper = mapper;
         _publishEndpoint = publishEndpoint;
@@ -34,12 +33,12 @@ public class BidsController : ControllerBase
         {
             auction = _grpcClient.GetAuction(auctionId);
 
-            if (auction == null) return BadRequest("Cannot accept bids on this auction at this time!");
+            if (auction == null) return BadRequest("Cannot accept bids on this auction at this time");
         }
 
         if (auction.Seller == User.Identity.Name)
         {
-            return BadRequest("You cannot bid on your own auction!");
+            return BadRequest("You cannot bid on your own auction");
         }
 
         var bid = new Bid
@@ -56,9 +55,9 @@ public class BidsController : ControllerBase
         else
         {
             var highBid = await DB.Find<Bid>()
-            .Match(a => a.AuctionId == auctionId)
-            .Sort(b => b.Descending(x => x.Amount))
-            .ExecuteFirstAsync();
+                        .Match(a => a.AuctionId == auctionId)
+                        .Sort(b => b.Descending(x => x.Amount))
+                        .ExecuteFirstAsync();
 
             if (highBid != null && amount > highBid.Amount || highBid == null)
             {
@@ -80,8 +79,8 @@ public class BidsController : ControllerBase
         return Ok(_mapper.Map<BidDto>(bid));
     }
 
-    [HttpGet]
-    public async Task<ActionResult<List<BidDto>>> GetBidForAuction(string auctionId)
+    [HttpGet("{auctionId}")]
+    public async Task<ActionResult<List<BidDto>>> GetBidsForAuction(string auctionId)
     {
         var bids = await DB.Find<Bid>()
             .Match(a => a.AuctionId == auctionId)
