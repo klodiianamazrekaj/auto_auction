@@ -33,10 +33,10 @@ export default function SignalRProvider({ children }: Props) {
           console.log("Connected to Notification Hub");
 
           connection.on("BidPlaced", (bid: Bid) => {
-            console.log("Bid Placed Event Received");
             if (bid.bidStatus.includes("Accepted")) {
               setCurrentPrice(bid.auctionId, bid.amount);
             }
+            addBid(bid);
           });
         })
         .catch((error) => console.log(error));
