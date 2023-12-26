@@ -1,4 +1,7 @@
-import { getBidsForAuction, getDetailedViewData } from "@/app/actions/auctionActions";
+import {
+  getBidsForAuction,
+  getDetailedViewData,
+} from "@/app/actions/auctionActions";
 import Heading from "@/app/components/Heading";
 import React from "react";
 import CountdownTimer from "../../CountdownTimer";
@@ -26,8 +29,9 @@ export default async function Details({ params }: { params: { id: string } }) {
             </>
           )}
         </div>
+
         <div className="flex gap-3">
-          <h3 className="text-2xl font-semibold">Time Remaining:</h3>
+          <h3 className="text-2xl font-semibold">Time remaining:</h3>
           <CountdownTimer auctionEnd={data.auctionEnd} />
         </div>
       </div>

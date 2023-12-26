@@ -30,7 +30,7 @@ export default function DetailedSpecs({ auction }: Props) {
         </Table.Row>
         <Table.Row className="bg-white dark:border-gray-700 dark:bg-gray-800">
           <Table.Cell className="whitespace-nowrap font-medium text-gray-900 dark:text-white">
-            Year Manufactured
+            Year manufactured
           </Table.Cell>
           <Table.Cell>{auction.year}</Table.Cell>
         </Table.Row>
@@ -42,7 +42,7 @@ export default function DetailedSpecs({ auction }: Props) {
         </Table.Row>
         <Table.Row className="bg-white dark:border-gray-700 dark:bg-gray-800">
           <Table.Cell className="whitespace-nowrap font-medium text-gray-900 dark:text-white">
-            Has Reserve Price?
+            Has reserve price?
           </Table.Cell>
           <Table.Cell>{auction.reservePrice > 0 ? "Yes" : "No"}</Table.Cell>
         </Table.Row>

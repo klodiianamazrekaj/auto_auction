@@ -10,8 +10,8 @@ type Props = {
 };
 
 export default function AuctionFinishedToast({
-  finishedAuction,
   auction,
+  finishedAuction,
 }: Props) {
   return (
     <Link
@@ -28,7 +28,7 @@ export default function AuctionFinishedToast({
         />
         <div className="flex flex-col">
           <span>
-            Auction for {auction.make} {auction.model} has finished!{" "}
+            Auction for {auction.make} {auction.model} has finished
           </span>
           {finishedAuction.itemSold && finishedAuction.amount ? (
             <p>
@@ -36,7 +36,7 @@ export default function AuctionFinishedToast({
               $${numberWithCommas(finishedAuction.amount)}
             </p>
           ) : (
-            <p>This item did not sell!</p>
+            <p>This item did not sell</p>
           )}
         </div>
       </div>

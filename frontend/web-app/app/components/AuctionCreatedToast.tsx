@@ -21,7 +21,9 @@ export default function AuctionCreatedToast({ auction }: Props) {
           width={80}
           className="rounded-lg w-auto h-auto"
         />
-        <span>New Auction! {auction.make} {auction.model} has been added! </span>
+        <span>
+          New Auction! {auction.make} {auction.model} has been added
+        </span>
       </div>
     </Link>
   );
