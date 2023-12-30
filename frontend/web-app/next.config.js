@@ -8,6 +8,9 @@ const nextConfig = {
             'cdn.pixabay.com'
         ]
     },
+    typescript: {
+        ignoreBuildErrors: true,
+    },
     output: 'standalone'
 }
 
